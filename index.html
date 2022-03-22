@@ -11,6 +11,14 @@
 <link rel="stylesheet" type="text/css" href="../src/assets/style.css">
 <style class="darkreader darkreader--cors" media="screen">html {
 }
+#overlay {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 7em;
+    margin: .2em .5em;
+    color: rgba(255, 255, 255, 1);
+    position: fixed;
+    right: 0;
+}
 .bgvid {
     position: fixed;
     right: 0;
@@ -38,4 +46,5 @@ gr-main-header {
 }</style><style type="text/css"></style><style class="darkreader darkreader--sync" media="screen"></style><style type="text/css"></style><style class="darkreader darkreader--sync" media="screen"></style></head>
   <body>
     <!--Video -->
-    <video autoplay loop onloadstart="this.volume=0.3" id="videoPlayer" controls="controls"><source src="https://lolis.club/r/pico_pico_tokyo.mp4" type="video/mp4"></video>
+    <iframe src="https://raw.githubusercontent.com/anars/blank-audio/master/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <video autoplay loop onloadstart="this.volume=0.3" id="player" class="bgvid"><source src="https://lolis.club/r/pico_pico_tokyo.mp4" type="video/mp4"></video>
