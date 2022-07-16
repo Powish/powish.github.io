@@ -8,6 +8,7 @@ html {
     color: rgba(255, 255, 255, 1);
     position: fixed;
     right: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .bgvid {
     position: fixed;
