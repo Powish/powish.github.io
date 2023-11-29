@@ -20,3 +20,8 @@ html {
     width: auto;
     height: auto;
 }
+#card {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
