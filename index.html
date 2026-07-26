@@ -36,10 +36,12 @@ function playVideo() {
     video.play();
     overlay.style.opacity = '0';
     overlay.style.pointerEvents = 'none';
+    overlay.textContent = 'Click to pause';
   } else {
     video.pause();
     overlay.style.opacity = '1';
     overlay.style.pointerEvents = 'auto';
+    overlay.textContent = 'Click to play';
   }
 }
 </script>
