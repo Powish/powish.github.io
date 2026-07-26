@@ -20,12 +20,28 @@ html {
   <body>
     <!--Video -->
 <div class="video">
-<video autoplay loop controls onloadstart="this.volume=0.6"><source src="https://uoh.lolis.club/r/pico_pico_tokyo.webm" type="video/webm"><source src="https://uoh.lolis.club/r/pico_pico_tokyo.mp4" type="video/mp4"></video>
+<video loop onloadstart="this.volume=0.6"><source src="https://uoh.lolis.club/r/pico_pico_tokyo.webm" type="video/webm"><source src="https://uoh.lolis.club/r/pico_pico_tokyo.mp4" type="video/mp4"></video>
 </div>
-<div id="overlay">Click to play!</div>
+<div id="overlay" onclick="playVideo()">Click to play!</div>
 <div id="card">
 <a href="https://www.youtube.com/c/Powish">
   <img src="../src/assets/credit_card.webp" style="width:200px;">
 </a></div>
 </div>
+      <script>
+function playVideo() {
+  const video = document.querySelector('.video video');
+  const overlay = document.getElementById('overlay');
+  if (video.paused) {
+    video.play();
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+  } else {
+    video.pause();
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'auto';
+  }
+}
+</script>
+</body>
 </body>
